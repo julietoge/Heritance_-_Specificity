@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heritance_Specificity</title>
+    <style>
+        /* example of an inheritance */
+        .container {
+            color: rgb(6, 85, 85);
+        }
+
+        /* / example of specificity */
+        ul {
+            color: chocolate;
+        }
+
+        #specific {
+            color: blue;
+        }
+
+        .specificity {
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h3>MY LIKES AND DISLIKES</h3>
+    </header>
+    <main>
+        <ul class="container">
+            <li class="likes_container" id="likes">LIKES
+                <ol class="">
+                    <li class="">Technololgies</li>
+                    <li class="specificity" id="specific">Software Development</li>
+                    <li class="specificity" id="specific">Team cooperative work as well as independent work</li>
+                    <li class="">Solving problems with computer system through coding</li>
+                    <li class="">General Computer Science</li>
+                </ol>
+            </li>
+            <li class="dislikes_container" id="dislikes">DISLIKES
+                <ol class="">
+                    <li class="">Unseriousness</li>
+                    <li class="">Stress</li>
+                    <li class="">Lateness</li>
+                    <li class="specificity" id="specific">Malices</li>
+                    <li class="">Distractions</li>
+                </ol>
+            </li>
+        </ul>
+    </main>
+</body>
+
+</html>
